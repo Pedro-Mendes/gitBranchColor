@@ -13,4 +13,4 @@ But if you would like to choose your own, you can choose between the following b
 
 ![Color code](/256_colors_fg.png)
 
-##### fonts: https://misc.flogisoft.com/bash/tip_colors_and_formatting        https://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-ps1-prompt
+##### sources: https://misc.flogisoft.com/bash/tip_colors_and_formatting        https://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-ps1-prompt
