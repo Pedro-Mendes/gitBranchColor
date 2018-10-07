@@ -45,9 +45,20 @@ In this code snippet we have only the user, path and current branch, but you can
 And so on...
 But if you would like to choose your own color, you can choose between the following by using declaring COLOR_YOURCOLOR="\e[38;5;<COLOR_NUMBER>":
 
-![Color code](/256_colors_fg.png)
+![Color code](/images/256_colors_fg.png)
 
-Feel free to contribute! 
+#### In the provided snippet the color of the current branches changes depending on the status of the branch:
+
+Nothing to commit(green)
+![Green](/images/green.png)
+
+Files have been modified(red)
+![Red](/images/red.png)
+
+You have commited but not pushed:
+![Yellow](/images/yellow.png)
+
+## Feel free to contribute! 
 
 ##### sources: 
 * https://misc.flogisoft.com/bash/tip_colors_and_formatting     
