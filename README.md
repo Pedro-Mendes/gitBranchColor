@@ -1,7 +1,7 @@
 # Setting up colors for the prompt
 
 ## .bashPedro-Mendes
-* This code snipped should be pasted inside the ~/.bashrc file:
+* This code snipped should be pasted at the end of the ~/.bashrc file:
 > code ~/.bashrc
 * You can set which colors you like by changing the "COLOR_ID" in the code:
 > echo -e $COLOR_GREEN
