@@ -49,14 +49,14 @@ But if you would like to choose your own color, you can choose between the follo
 
 #### In the provided snippet the color of the current branches changes depending on the status of the branch:
 
-Nothing to commit(green)
-![Green](/images/green.png)
+* Nothing to commit(green)
+    * ![Green](/images/green.png)
 
-Files have been modified(red)
-![Red](/images/red.png)
+* Files have been modified(red)
+    * ![Red](/images/red.png)
 
-You have commited but not pushed:
-![Yellow](/images/yellow.png)
+* You have commited but not pushed:
+    * ![Yellow](/images/yellow.png)
 
 ## Feel free to contribute! 
 
