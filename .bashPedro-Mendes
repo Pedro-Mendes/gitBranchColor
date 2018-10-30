@@ -8,6 +8,8 @@ COLOR_RESET="\033[0m"
 COLOR_PINK="\e[38;5;201m"
 COLOR_CYAN="\e[96m"
 
+colors=($COLOR_RED $COLOR_YELLOW $COLOR_GREEN $COLOR_OCHRE $COLOR_BLUE $COLOR_WHITE $COLOR_PINK $COLOR_CYAN)
+
 function git_color {
   local git_status="$(git status 2> /dev/null)"
 
@@ -36,8 +38,19 @@ function git_branch {
   fi
 }
 
-PS1="\[$COLOR_CYAN\]\u\[$COLOR_WHITE\][\W]"          # basename of pwd
+randomColor=${colors[(RANDOM%8)]}
+PS1="\[${randomColor}\]\u\[$COLOR_WHITE\][\w]"          # basename of pwd
 PS1+="\[\$(git_color)\]"        # colors git status
 PS1+="\$(git_branch)"           # prints current branch
 PS1+="\[$COLOR_PINK\]\$\[$COLOR_RESET\] "   # '#' for root, else '$'
 export PS1
+
+#export PATH="$PATH:/home/user/scripts" -> folder which holds my scripts, which can be executed from anywhere 
+
+
+ if [ -x /usr/games/fortune ]; then
+   OUTPUT="$(fortune -s | cow$(shuf -n1 -e say think) -f $(ls /usr/share/cowsay/cows/ | shuf -n1))"
+   echo -e "${randomColor}${OUTPUT}${COLOR_RESET}"
+ fi
+
+#echo "$(date '+%D %T' | toilet -f term -F border --gay)";
